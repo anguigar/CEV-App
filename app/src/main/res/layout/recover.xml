@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+
+    <ImageView
+        android:id="@+id/logoCEV"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:src="@mipmap/logo_cev" />
+
+    <TextView
+        android:id="@+id/textRecover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Contraseña"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/recoverEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/recoverInit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_round"
+        android:text="Enviar Email"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/recoverLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_round2"
+        android:text="Volver al Login"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

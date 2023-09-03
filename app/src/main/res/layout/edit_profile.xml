@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+
+    <ImageView
+        android:id="@+id/logoCEV"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:src="@mipmap/logo_cev" />
+
+    <TextView
+        android:id="@+id/textChangePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Foto"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Perfil"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/profileId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/profileImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Avatar"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/profileNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/profileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/profileTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/profilePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/profileInit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_round"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/profileHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_round2"
+        android:text="Volver a Cursos"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

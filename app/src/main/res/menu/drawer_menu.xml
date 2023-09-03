@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_options"
+            android:checkable="false"
+            android:title="Menu" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/ic_profile"
+            android:checkable="false"
+            android:iconTint="@color/colorPrimary"
+            android:title="Editar Perfil" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact"
+            android:checkable="false"
+            android:iconTint="@color/colorPrimary"
+            android:title="Contacto" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:checkable="false"
+            android:iconTint="@color/colorPrimary"
+            android:title="Salir" />
+    </group>
+</menu>

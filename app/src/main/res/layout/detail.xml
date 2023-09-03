@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+    <ImageView
+        android:id="@+id/detalleImagen"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:src="@mipmap/logo_cev" />
+
+
+    <TextView
+        android:id="@+id/detalleTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:hint=" "
+        android:textAlignment="textStart"
+        android:textColor="#009688"
+        android:textColorHighlight="#009688"
+        android:textColorHint="#009688"
+        android:textColorLink="#009688"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/detalleDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint=" "
+        android:textAlignment="gravity"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/detalleLikes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:hint=" "
+        android:textAlignment="textEnd"
+        android:textColor="#009688"
+        android:textColorHighlight="#009688"
+        android:textColorHint="#009688"
+        android:textColorLink="#009688"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+        
+    <TableLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:stretchColumns="0">
+            <TableRow
+                android:id="@+id/tableLike"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+
+                <Button
+                    android:id="@+id/detalleLike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_round2"
+                    android:text="Me Gusta" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableNoLike"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textAlignment="center">
+                <Button
+                    android:id="@+id/detalleNoLike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="3dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_round4"
+                    android:text="No Me Gusta" />
+            </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/tableLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:stretchColumns="0,1">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center">
+
+            <Button
+                android:id="@+id/detalleInfoUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_column="0"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_round3"
+                android:text="Ver Mas Información" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/editComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe un comentario" />
+
+        <Button
+            android:id="@+id/btnSaveComment"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/button_round"
+            android:text="Guardar comentario"
+            android:textSize="10sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
